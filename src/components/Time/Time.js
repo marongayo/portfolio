@@ -33,7 +33,7 @@ const Time = () => {
 
     const startTicking = (val) => {
       if (val < 10) {
-        val = "0" + val;
+        val = "00" + val;
       }
       return val;
     };

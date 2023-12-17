@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <section>
       <div className="mar">
-        <h1 className="mvn">MAR.</h1>
+        <h2 className="mvn">MAR.</h2>
         <br />
       </div>
     </section>

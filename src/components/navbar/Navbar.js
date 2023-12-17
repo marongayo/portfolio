@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const location = useLocation();
+
   useEffect(() => {
     const list = document.querySelectorAll(".list");
 
@@ -21,40 +24,44 @@ const Navbar = () => {
   return (
     <div className="navigation">
       <ul>
-        <li className="list active">
-          <a href="#">
+        <li className={`list ${location.pathname === "/" ? "active" : ""}`}>
+          <Link to="/">
             <span className="icon">
               <ion-icon name="home-outline"></ion-icon>
             </span>
             <span className="text">Home</span>
-          </a>
+          </Link>
         </li>
 
-        <li className="list">
-          <a href="#">
+        <li
+          className={`list ${location.pathname === "/profile" ? "active" : ""}`}
+        >
+          <Link to="/profile">
             <span className="icon">
               <ion-icon name="person-outline"></ion-icon>
             </span>
             <span className="text">Profile</span>
-          </a>
+          </Link>
         </li>
 
-        <li className="list">
-          <a href="#">
+        <li
+          className={`list ${location.pathname === "/contact" ? "active" : ""}`}
+        >
+          <Link to="/contact">
             <span className="icon">
               <ion-icon name="chatbubble-outline"></ion-icon>
             </span>
             <span className="text">Contact</span>
-          </a>
+          </Link>
         </li>
 
-        <li className="list">
-          <a href="#">
+        <li className={`list ${location.pathname === "/work" ? "active" : ""}`}>
+          <Link to="/work">
             <span className="icon">
               <ion-icon name="newspaper-outline"></ion-icon>
             </span>
             <span className="text">Work</span>
-          </a>
+          </Link>
         </li>
 
         <div className="indicator"></div>
