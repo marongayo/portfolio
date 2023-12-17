@@ -1,56 +1,65 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
-  return (
-    <nav class="slidemenu">
-      <input
-        type="radio"
-        name="slideItem"
-        id="slide-item-1"
-        class="slide-toggle"
-        checked
-      />
-      <label for="slide-item-1">
-        <span class="material-symbols-outlined icon">home</span>
-        <p>Home</p>
-      </label>
-      <input
-        type="radio"
-        name="slideItem"
-        id="slide-item-2"
-        class="slide-toggle"
-      />
-      <label for="slide-item-2">
-        <span class="material-symbols-outlined icon">spoke</span>
-        <p>About</p>
-      </label>
+  useEffect(() => {
+    const list = document.querySelectorAll(".list");
 
-      <input
-        type="radio"
-        name="slideItem"
-        id="slide-item-3"
-        class="slide-toggle"
-      />
-      <label for="slide-item-3">
-        <span class="icon material-symbols-outlined">contract</span>
-        <p>Work</p>
-      </label>
-      <input
-        type="radio"
-        name="slideItem"
-        id="slide-item-4"
-        class="slide-toggle"
-      />
-      <label for="slide-item-4">
-        <span class="material-symbols-outlined icon">perm_phone_msg</span>
-        <p>Contact</p>
-      </label>
-      <div class="clear"></div>
-      <div class="slider">
-        <div class="bar"></div>
-      </div>
-    </nav>
+    function activeLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+
+    list.forEach((item) => item.addEventListener("click", activeLink));
+
+    return () => {
+      // Cleanup: remove event listeners when the component is unmounted
+      list.forEach((item) => item.removeEventListener("click", activeLink));
+    };
+  }, []); // Empty dependency array ensures that this effect runs only once after the initial render
+
+  return (
+    <div className="navigation">
+      <ul>
+        <li className="list active">
+          <a href="#">
+            <span className="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span className="text">Home</span>
+          </a>
+        </li>
+
+        <li className="list">
+          <a href="#">
+            <span className="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span className="text">Profile</span>
+          </a>
+        </li>
+
+        <li className="list">
+          <a href="#">
+            <span className="icon">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+            </span>
+            <span className="text">Contact</span>
+          </a>
+        </li>
+
+        <li className="list">
+          <a href="#">
+            <span className="icon">
+              <ion-icon name="newspaper-outline"></ion-icon>
+            </span>
+            <span className="text">Work</span>
+          </a>
+        </li>
+
+        <div className="indicator"></div>
+      </ul>
+    </div>
   );
 };
 

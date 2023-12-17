@@ -47,9 +47,7 @@ const Time = () => {
       <div className="clock">
         {time.hours}:{time.minutes}:{time.seconds} {period}
       </div>
-      <div id="day_year" style={{ color: "#000", fontWeight: "bold" }}>
-        {date}
-      </div>
+      <div id="day_year">{date}</div>
     </div>
   );
 };

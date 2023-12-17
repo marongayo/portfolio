@@ -9,7 +9,7 @@
 .dH {
   clear: both;
   padding: 0 5%; /* Use a percentage for responsiveness */
-  font-size: 14px; /* Use a relative font size */
+  font-size: 8px; /* Use a relative font size */
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .clock {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 #day_year {

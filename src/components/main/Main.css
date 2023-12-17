@@ -1,21 +1,22 @@
-.mar {
-  display: flex;
-  justify-content: center;
-  margin-top: 10vh; /* Use a percentage for responsiveness */
-  align-items: center;
-  font-size: 7rem; /* Use a relative font size */
-  color: #616161;
-}
-
 /* Media queries for responsiveness */
 @media screen and (max-width: 600px) {
-  .mar {
+  .mvn {
     font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .mar {
-    font-size: 1.5rem;
+  .mvn {
+    font-size: 0.2rem;
   }
+}
+
+.mvn {
+  display: flex;
+  justify-content: center;
+  margin-top: 9vh; /* Use a percentage for responsiveness */
+  align-items: center;
+  font-size: 10rem;
+  color: #616161;
+  margin-bottom: 0;
 }
