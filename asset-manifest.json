@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.90db2747.css",
-    "main.js": "/portfolio/static/js/main.579ad7d5.js",
+    "main.css": "/portfolio/static/css/main.1140760f.css",
+    "main.js": "/portfolio/static/js/main.2194b0f8.js",
+    "static/media/lmromanslant10-regular-webfont.svg": "/portfolio/static/media/lmromanslant10-regular-webfont.7985390fdb6c57d82d58.svg",
+    "static/media/lmromanslant10-regular-webfont.ttf": "/portfolio/static/media/lmromanslant10-regular-webfont.1f1805bb6d721e6171ab.ttf",
+    "static/media/lmromanslant10-regular-webfont.woff": "/portfolio/static/media/lmromanslant10-regular-webfont.81d2012b93cfc9e022b5.woff",
+    "static/media/lmromanslant10-regular-webfont.eot": "/portfolio/static/media/lmromanslant10-regular-webfont.2901595df46d2f873ded.eot",
+    "static/media/icomoon.svg?3hi6ws": "/portfolio/static/media/icomoon.3a7fa809a51519dc2b03.svg",
+    "static/media/icomoon.eot?3hi6ws": "/portfolio/static/media/icomoon.64e772f6edbe9be65c8a.eot",
+    "static/media/icomoon.woff?3hi6ws": "/portfolio/static/media/icomoon.5fc82f90bc4c43c91336.woff",
+    "static/media/icomoon.ttf?3hi6ws": "/portfolio/static/media/icomoon.192159f9845d83d2d7ea.ttf",
     "index.html": "/portfolio/index.html",
-    "main.90db2747.css.map": "/portfolio/static/css/main.90db2747.css.map",
-    "main.579ad7d5.js.map": "/portfolio/static/js/main.579ad7d5.js.map"
+    "main.1140760f.css.map": "/portfolio/static/css/main.1140760f.css.map",
+    "main.2194b0f8.js.map": "/portfolio/static/js/main.2194b0f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.90db2747.css",
-    "static/js/main.579ad7d5.js"
+    "static/css/main.1140760f.css",
+    "static/js/main.2194b0f8.js"
   ]
 }
